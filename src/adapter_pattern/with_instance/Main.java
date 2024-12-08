@@ -1,7 +1,7 @@
-package adapter_pattern;
+package adapter_pattern.with_instance;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Print p = new PrintBanner("Hello");
         p.printWeak();
         p.printStrong();

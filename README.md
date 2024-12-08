@@ -2,3 +2,5 @@
 ### 현재 실습 완료한 패턴
 
 - Iterator 패턴
+- Adapter 패턴
+- Template Method 패턴
