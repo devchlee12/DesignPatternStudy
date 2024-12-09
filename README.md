@@ -4,3 +4,4 @@
 - Iterator 패턴
 - Adapter 패턴
 - Template Method 패턴
+- Factory Method 패턴

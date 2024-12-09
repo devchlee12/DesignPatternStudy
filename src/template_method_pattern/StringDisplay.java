@@ -7,19 +7,26 @@ public class StringDisplay extends AbstractDisplay{
         this.str = str;
     }
 
-
     @Override
     public void open() {
-        System.out.print("--");
+        printLine();
     }
 
     @Override
     public void close() {
-        System.out.println("--");
+        printLine();
     }
 
     @Override
     public void print() {
-        System.out.print(str);
+        System.out.println("|" + str + "|");
+    }
+
+    private void printLine(){
+        System.out.print("+");
+        for (int i = 0;i < str.length();i++){
+            System.out.print("-");
+        }
+        System.out.println("+");
     }
 }
