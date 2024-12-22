@@ -1,6 +1,8 @@
-package prototype_pattern.framework;
+package prototype_pattern;
 
-public class UnderlinePen implements Product{
+import prototype_pattern.framework.Product;
+
+public class UnderlinePen implements Product {
   private char ulchar;
 
   public UnderlinePen(char ulchar) {
@@ -9,10 +11,11 @@ public class UnderlinePen implements Product{
 
   @Override
   public void use(String s) {
-    System.out.print(s);
+    System.out.println(s);
     for (int i = 0;i < s.length();i++){
       System.out.print(ulchar);
     }
+    System.out.println();
   }
 
   @Override

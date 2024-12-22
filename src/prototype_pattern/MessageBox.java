@@ -1,6 +1,8 @@
-package prototype_pattern.framework;
+package prototype_pattern;
 
-public class MessageBox implements Product{
+import prototype_pattern.framework.Product;
+
+public class MessageBox implements Product {
   private char decoChar;
   public MessageBox(char decoChar) {
     this.decoChar = decoChar;
@@ -11,12 +13,14 @@ public class MessageBox implements Product{
     for (int i = 0;i < s.length() + 2;i++){
       System.out.print(decoChar);
     }
+    System.out.println();
     System.out.print(decoChar);
     System.out.print(s);
     System.out.println(decoChar);
     for (int i = 0;i < s.length() + 2;i++){
       System.out.print(decoChar);
     }
+    System.out.println();
   }
 
   @Override
